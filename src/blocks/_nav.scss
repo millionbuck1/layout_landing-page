@@ -1,0 +1,60 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.nav {
+  margin-top: 72px;
+
+  &__list {
+    display: grid;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item a {
+    display: inline-block;
+    color: $color-text-dark;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0;
+    font-size: 22px;
+    line-height: 1;
+
+    &:hover {
+      box-shadow: 0 1px 0 $color-text-dark;
+    }
+  }
+
+  @include on-tablet {
+    margin-top: 64px;
+
+    &__list {
+      gap: 28px;
+    }
+  }
+
+  @include on-mobile {
+    margin-top: 44px;
+
+    &__list {
+      gap: 24px;
+    }
+
+    &__item a {
+      font-size: 20px;
+    }
+  }
+
+  @include on-phone {
+    margin-top: 40px;
+
+    &__list {
+      gap: 20px;
+    }
+
+    &__item a {
+      font-size: 18px;
+    }
+  }
+}

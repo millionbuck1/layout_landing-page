@@ -1,0 +1,108 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 48px 120px;
+  overflow: auto;
+  background-color: $color-menu-bg;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition:
+    opacity var(--animation-duration),
+    transform var(--animation-duration);
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(0);
+  }
+
+  &__content {
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+
+  &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-menu-top-bg;
+
+    img {
+      display: block;
+      max-width: 187px;
+      height: auto;
+    }
+  }
+
+  &__phone,
+  &__test-ride {
+    color: $color-text-dark;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  &__phone {
+    display: block;
+    width: fit-content;
+    margin-top: 48px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0;
+
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+
+  &__test-ride {
+    display: block;
+    width: fit-content;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $color-text-dark;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @include on-tablet {
+    padding: 32px 72px;
+  }
+
+  @include on-mobile {
+    padding: 24px 20px;
+
+    &__top img {
+      width: 130px;
+      height: auto;
+    }
+
+    &__phone {
+      margin-top: 40px;
+    }
+
+    &__test-ride {
+      margin-top: 12px;
+    }
+  }
+
+  @include on-phone {
+    padding: 24px 20px;
+
+    &__phone {
+      margin-top: 36px;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.header {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 24px 20px 40px;
+  background-image: url(images/Cover_photo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    img {
+      display: block;
+      max-width: 187px;
+      height: auto;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-main;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  @include on-tablet {
+    padding: 32px 72px 64px;
+
+    &__top {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 64px;
+    }
+  }
+
+  @include on-mobile {
+    min-height: 100vh;
+    padding: 24px 20px 88px;
+    background-position: 58% center;
+
+    &__top img {
+      width: 130px;
+      height: auto;
+    }
+
+    &__title {
+      font-size: 36px;
+      letter-spacing: 0;
+    }
+
+    &__icons {
+      gap: 20px;
+    }
+  }
+}

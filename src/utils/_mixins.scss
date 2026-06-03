@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+@mixin on-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin on-mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin on-phone {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
