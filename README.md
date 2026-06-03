@@ -22,3 +22,10 @@ Follow the instructions in this and next lessons to implement the page block by 
 # Tips & Hints
 - Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
 - If some points from the checklist are not relevant to your design, just skip it.
+
+## Demo Links
+
+Replace `<your_account>` with your Github username and copy the links to Pull Request description:
+
+- [DEMO LINK](https://millionbuck1.github.io/layout_hello-world/)
+- [TEST REPORT LINK](https://millionbuck1.github.io/layout_hello-world/report/html_report/)
