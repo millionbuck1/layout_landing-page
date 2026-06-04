@@ -1,8 +1,8 @@
 @use '../utils/variables' as *;
 
 .logo {
-  display: block;
   overflow: hidden;
+  display: block;
 
   img {
     transition: transform var(--animation-duration);

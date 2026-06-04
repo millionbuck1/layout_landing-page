@@ -3,8 +3,8 @@
 
 .contact {
   display: grid;
-  align-content: start;
   gap: 24px;
+  align-content: start;
 
   &__label {
     margin: 0 0 8px;
@@ -14,11 +14,13 @@
 
   &__value {
     display: block;
+
     margin: 0;
-    color: $color-white;
+
     font-size: 20px;
     font-weight: 700;
     line-height: 1.4;
+    color: $color-white;
     text-decoration: none;
 
     &:hover {

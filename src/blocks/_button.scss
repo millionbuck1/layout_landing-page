@@ -2,20 +2,25 @@
 @use '../utils/mixins' as *;
 
 .button {
+  cursor: pointer;
+
   border: 0;
   border-radius: 40px;
-  background-color: $color-white;
-  color: $color-text-dark;
+
   font-family: $font-main;
   font-weight: 700;
-  cursor: pointer;
+  color: $color-text-dark;
+
+  background-color: $color-white;
 }
 
 .main > .button {
   display: block;
+
   min-width: 280px;
   height: 56px;
   margin: 0 auto 80px;
+
   transition:
     box-shadow var(--animation-duration),
     transform var(--animation-duration);

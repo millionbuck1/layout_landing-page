@@ -23,8 +23,8 @@
 
   &--move {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 50px 100px;
   }
 
@@ -35,10 +35,12 @@
 
   &--move-text {
     flex: 1;
+
     max-width: 500px;
-    line-height: 140%;
+
     font-size: 23px;
     font-weight: 500;
+    line-height: 140%;
   }
 
   &--bike {

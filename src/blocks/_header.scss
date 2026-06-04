@@ -4,21 +4,24 @@
 .header {
   position: relative;
   z-index: 1;
-  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  box-sizing: border-box;
   height: 100vh;
   padding: 24px 20px 40px;
+
   background-image: url('/src/images/Cover_photo.png');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   &__top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 0 40px;
 
     img {
@@ -35,15 +38,16 @@
 
   &__title {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     font-family: $font-main;
+    font-size: 80px;
     font-weight: 700;
     font-style: normal;
-    font-size: 80px;
     line-height: 100%;
-    letter-spacing: 0;
     text-align: center;
+    letter-spacing: 0;
     vertical-align: middle;
   }
 
