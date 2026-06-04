@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 @mixin on-tablet {
   @media (max-width: $tablet) {

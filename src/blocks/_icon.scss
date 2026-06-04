@@ -4,7 +4,7 @@
   height: 24px;
 
   &--phone {
-    background-image: url(images/icon-phone-call.png);
+    background-image: url('/src/images/icon-phone-call.png');
     background-position: center;
 
     &:hover {
@@ -13,13 +13,13 @@
   }
 
   &--menu {
-    background-image: url(images/Vector.png);
+    background-image: url('/src/images/Vector.png');
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--close {
-    background-image: url(images/Vector\ \(1\).png);
+    background-image: url('/src/images/Vector-1.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 24px 24px;

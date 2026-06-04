@@ -14,7 +14,7 @@ h4,
 h5,
 h6,
 p {
-  color: #ffffff;
+  color: #fff;
 }
 
 a {
@@ -63,19 +63,19 @@ a {
   height: 24px;
 }
 .icon--phone {
-  background-image: url(images/icon-phone-call.png);
+  background-image: url("/src/images/icon-phone-call.png");
   background-position: center;
 }
 .icon--phone:hover {
   color: var(--hover-color);
 }
 .icon--menu {
-  background-image: url(images/Vector.png);
+  background-image: url("/src/images/Vector.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon--close {
-  background-image: url(images/Vector\ \(1\).png);
+  background-image: url("/src/images/Vector-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 24px;
@@ -106,7 +106,7 @@ a {
   justify-content: space-between;
   height: 100vh;
   padding: 24px 20px 40px;
-  background-image: url(images/Cover_photo.png);
+  background-image: url("/src/images/Cover_photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -539,7 +539,7 @@ a {
 .button {
   border: 0;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #1d1d1d;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -570,17 +570,13 @@ a {
 }
 
 .footer {
-  position: sticky;
-  bottom: 0;
-  z-index: -1;
   padding-top: 80px;
   background-color: #191717;
 }
 .footer__content {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 160px;
-  row-gap: 48px;
+  gap: 48px 160px;
   max-width: 1020px;
   margin: 0 auto 100px;
   padding: 0 20px;
@@ -695,7 +691,7 @@ a {
 .contact__value {
   display: block;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
