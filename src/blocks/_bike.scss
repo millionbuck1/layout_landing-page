@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
+
     width: 100%;
     max-width: 1020px;
   }
@@ -25,10 +26,11 @@
     &__cards {
       grid-template-columns: 1fr;
       gap: 40px;
-      max-width: none;
-      width: 100%;
-      padding: 0 20px;
+
       box-sizing: border-box;
+      width: 100%;
+      max-width: none;
+      padding: 0 20px;
     }
   }
 
@@ -36,10 +38,11 @@
     &__cards {
       grid-template-columns: 1fr;
       gap: 40px;
-      max-width: none;
-      width: 100%;
-      padding: 0 20px;
+
       box-sizing: border-box;
+      width: 100%;
+      max-width: none;
+      padding: 0 20px;
     }
   }
 
@@ -47,9 +50,10 @@
     &__cards {
       grid-template-columns: 1fr;
       gap: 32px;
+
+      box-sizing: border-box;
       max-width: 100%;
       padding: 0 20px;
-      box-sizing: border-box;
     }
   }
 }
