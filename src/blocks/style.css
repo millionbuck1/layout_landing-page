@@ -134,7 +134,7 @@ a {
   box-sizing: border-box;
   height: 100vh;
   padding: 24px 20px 40px;
-  background-image: url('/src/images/coverphoto.png');
+  background-image: url('../images/coverphoto.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
