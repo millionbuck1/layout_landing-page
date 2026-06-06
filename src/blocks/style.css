@@ -153,8 +153,6 @@ a {
   display: block;
 }
 
-
-
 .logo:hover img {
   transform: scale(1.06);
 }
@@ -183,8 +181,6 @@ a {
   justify-content: space-between;
   padding: 0 40px;
 }
-
-
 
 .header__icons {
   display: flex;
@@ -283,8 +279,6 @@ a {
 
   background-color: #c2c2c2;
 }
-
-
 
 .menu__phone,
 .menu__test-ride {
