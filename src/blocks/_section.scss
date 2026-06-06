@@ -1,5 +1,5 @@
-@use '../utils/variables' as *;
-@use '../utils/mixins' as *;
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .section {
   &__image {
@@ -65,22 +65,38 @@
 
   @include on-tablet {
     &--move {
+      display: grid;
       gap: 48px;
       padding: 80px 72px;
     }
 
     &--move-title {
+      margin: 0;
       font-size: 48px;
     }
 
     &--move-text {
+      margin: 0;
       font-size: 22px;
     }
 
-    &--bike,
+    &--bike {
+      align-items: stretch;
+      padding: 60px 0;
+    }
+
     &__details {
-      padding-right: 72px;
-      padding-left: 72px;
+      padding: 60px 72px;
+    }
+
+    &--bike--title {
+      margin-bottom: 40px;
+      font-size: 36px;
+      padding: 0 72px;
+    }
+
+    &__image {
+      max-width: none;
     }
   }
 
@@ -101,7 +117,11 @@
       font-size: 20px;
     }
 
-    &--bike,
+    &--bike {
+      align-items: stretch;
+      padding: 60px 0;
+    }
+
     &__details {
       padding: 60px 20px;
     }
@@ -109,6 +129,7 @@
     &--bike--title {
       margin-bottom: 40px;
       font-size: 32px;
+      padding: 0 20px;
     }
 
     &__image {
