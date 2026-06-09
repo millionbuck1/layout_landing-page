@@ -12,6 +12,7 @@
   box-sizing: border-box;
   height: 100vh;
   padding: 24px 20px 40px;
+  overflow: hidden;
 
   background-image: url('../images/coverphoto.png');
   background-repeat: no-repeat;
@@ -74,12 +75,33 @@
     }
 
     &__title {
+      max-width: 100%;
       font-size: 36px;
       letter-spacing: 0;
+      overflow-wrap: break-word;
     }
 
     &__icons {
       gap: 20px;
+    }
+  }
+
+  @include on-phone {
+    width: 100%;
+    max-width: 100%;
+    height: 640px;
+    min-height: 640px;
+    margin: 0 auto;
+    padding: 32px 24px 48px;
+    background-position: 70% center;
+
+    &__top img {
+      width: 170px;
+    }
+
+    &__title {
+      font-size: 36px;
+      white-space: nowrap;
     }
   }
 }

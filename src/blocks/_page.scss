@@ -1,21 +1,20 @@
 @use "../utils/variables" as *;
 
-body {
+html {
+  scroll-behavior: smooth;
+
   &:has(.page__menu:target) {
     overflow: hidden;
   }
 }
 
 .page {
-  scroll-behavior: smooth;
-
-
-
   &__body {
     margin: 0;
     background-color: $color-dark;
     font-family: $font-main;
     overflow-x: hidden;
+
   }
 
   &__menu {
