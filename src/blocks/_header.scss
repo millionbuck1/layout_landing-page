@@ -5,6 +5,7 @@
   position: relative;
   z-index: 1;
 
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,7 +13,6 @@
   box-sizing: border-box;
   height: 100vh;
   padding: 24px 20px 40px;
-  overflow: hidden;
 
   background-image: url('../images/coverphoto.png');
   background-repeat: no-repeat;
@@ -93,6 +93,7 @@
     min-height: 640px;
     margin: 0 auto;
     padding: 32px 24px 48px;
+
     background-position: 70% center;
 
     &__top img {
